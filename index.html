@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabit</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind css link -->
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts link end -->
+    <!-- fontawsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawsome link end -->
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* color */
+        --color-hoverColor: #5caf90;
+        --color-primaryColor: rgb(119, 119, 119);
+        --color-navBg: rgb(248, 248, 251);
+        --color-menuColor: rgb(75, 89, 102);
+       
+
+        /* font family */
+        --font-Poppins: "Poppins", sans-serif;
+        --font-Manrope: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav start -->
+    <section class="py-2 bg-navBg">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex gap-x-5">
+            <div class="">
+              <i
+                class="fa-solid fa-phone-volume text-primaryColor text-[13px]"
+              ></i>
+              <span
+                class="text-[13px] font-normal font-Poppins text-primaryColor pl-1"
+                >+91 987 654 3210</span
+              >
+            </div>
+            <div class="">
+              <i
+                class="fa-brands fa-whatsapp text-primaryColor text-[13px]"
+              ></i>
+              <span
+                class="text-[13px] font-normal font-Poppins text-primaryColor pl-1"
+                >+91 987 654 3210</span
+              >
+            </div>
+          </div>
+          <div class="text-[13px] font-normal font-Poppins text-primaryColor">
+            World`s Fastest Online Shopping Destination
+          </div>
+          <div class="flex gap-x-5">
+            <ul class="flex gap-x-5">
+              <li>
+                <a
+                  href="#"
+                  class="text-[13px] font-normal font-Poppins text-primaryColor hover:text-hoverColor duration-300"
+                  >help</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[13px] font-normal font-Poppins text-primaryColor hover:text-hoverColor duration-300"
+                  >track Order?</a
+                >
+              </li>
+            </ul>
+            <div class="flex">
+              <select
+                name="language"
+                id=""
+                class="text-[13px] font-normal font-Poppins text-primaryColor hover:text-hoverColor duration-300"
+              >
+                <option value="en">English</option>
+                <option value="it">Italiano</option>
+              </select>
+            </div>
+            <div class="group flex items-center gap-1 cursor-pointer">
+              <span
+                class="text-[13px] font-normal font-Poppins text-primaryColor group-hover:text-hoverColor duration-300"
+              >
+                Dollar
+              </span>
+              <i
+                class="fa-solid fa-angle-down text-primaryColor text-[13px] group-hover:text-hoverColor duration-300"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- nav end -->
+    
+
+    <!-- header section start -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- logo -->
+        <div class="flex items-center gap-1">
+          <img
+            src="images/logo (3).png"
+            alt="logo (3)"
+            class="cursor-pointer h-10 w-[144px] object-contain"
+          />
+        </div>
+
+        <!-- search bar -->
+        <div class="flex items-center w-[40%]">
+          <input
+            type="text"
+            placeholder="Search Products..."
+            class="w-full px-4 py-4 border border-gray-200 rounded-md focus:outline-none text-[13px] font-normal text-[#777] font-Poppins"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass -translate-x-8 text-[16px] font-normal text-primaryColor"
+          ></i>
+        </div>
+
+        <!-- icons -->
+        <div class="flex items-center gap-6 text-primaryColor font-Poppins">
+          <!-- 1st start -->
+          <div class="flex items-center gap-1 cursor-pointer group">
+            <i
+              class="fa-regular fa-user text-2xl group-hover:text-hoverColor duration-300"
+            ></i>
+            <div class="">
+              <h4
+                class="text-xs font-medium text-[#777] font-Poppins group-hover:text-hoverColor duration-300"
+              >
+                Account
+              </h4>
+              <h3 class="text-[13px] font-medium text-[#4b5966] font-Poppins">
+                LOGIN
+              </h3>
+            </div>
+          </div>
+          <!-- 1st end -->
+          <!-- 2nd start -->
+          <div class="flex items-center gap-1 cursor-pointer group">
+            <i
+              class="fa-regular fa-heart text-2xl group-hover:text-hoverColor duration-300"
+            ></i>
+            <div class="">
+              <h4
+                class="text-xs font-medium text-[#777] font-Poppins group-hover:text-hoverColor duration-300"
+              >
+                Wishlist
+              </h4>
+              <h3 class="text-[13px] font-medium text-[#4b5966] font-Poppins">
+                3–ITEMS
+              </h3>
+            </div>
+          </div>
+
+          <!-- 2nd end -->
+          <!-- 3rd start -->
+          <div class="flex items-center gap-1 cursor-pointer group">
+            <i
+              class="fa-solid fa-bag-shopping text-2xl group-hover:text-hoverColor duration-300"
+            ></i>
+            <div class="">
+              <h4
+                class="text-xs font-medium text-[#777] font-Poppins group-hover:text-hoverColor duration-300"
+              >
+                Cart
+              </h4>
+              <h3 class="text-[13px] font-medium text-[#4b5966] font-Poppins">
+                3–ITEMS
+              </h3>
+            </div>
+          </div>
+          <!-- 3rd end -->
+        </div>
+      </div>
+    </section>
+   
+
+   <!-- ====== -->
+    <section class="bg-white py-1 border border-gray-200">
+      <div class="container mx-auto flex items-center justify-between">
+        
+        <button
+          class="flex items-center gap-1 bg-hoverColor text-white text-[15px] font-Poppins font-medium px-6 py-[14px] rounded-md"
+        >
+          <i class="fa-solid fa-table-cells-large text-xl"></i>
+          All Categories
+          <i class="fa-solid fa-angle-down text-sm font-normal"></i>
+        </button>
+
+     <!-- menu start -->
+    
+        <ul
+          class="flex items-center gap-6 text-sm font-Poppins text-primaryColor"
+        >
+          <li class="group cursor-pointer">
+            <a
+              href="#"
+              class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300"
+            >
+              Home <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li class="group   cursor-pointer">
+            <a
+              href="#"
+              class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300"
+            >
+              Categories <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li class="group cursor-pointer">
+            <a
+              href="#"
+              class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300"
+            >
+              Products <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li class="group cursor-pointer">
+            <a
+              href="#"
+             class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300"
+            >
+              Blog <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li class="group cursor-pointer">
+            <a
+              href="#"
+              class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300"
+            >
+              Pages <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li class="group ">
+            <a href="#" class="text-menuColor font-Poppins font-medium text-[15px] group-hover:text-hoverColor duration-300">
+              <i class="fa-regular fa-clock"></i> Offers
+            </a>
+          </li>
+        </ul>
+        <!-- menu end -->
+        <!-- right button -->
+        <button
+          class="flex items-center gap-1 bg-hoverColor text-white text-[15px] font-Poppins font-medium px-6 py-[14px] rounded-md"
+        >
+          <i class="fa-solid fa-location-dot text-xl"></i>
+          
+          New York
+          <i class="fa-solid fa-angle-down text-sm font-normal"></i>
+        </button>
+      </div>
+    </section>
+     <!-- header section end -->
+      <!-- bannar part start here -->
+       <section class="py-10">
+          <div class="bg-[url(images/bannar.jpg)] h-[600px] bg-cover bg-center container mx-auto rounded-md">
+             <div class="ml-20 pt-[150px]">
+                   <h4 class="text-[20px] text-hoverColor font-medium font-Poppins">Starting at $ 20.00</h4>
+                   <h1 class="text-[55px] font-bold text-[#4b5966] w-[480px] leading-[65px]">Organic & healthy vegetables</h1>
+                   <button class="bg-menuColor hover:bg-hoverColor duration-300 text-white text-[15px] font-Poppins font-medium px-6 py-[14px] rounded-md mt-10">
+                     shop now
+                    <i class="fa-solid fa-angles-right"></i>
+                   </button>
+             </div>
+          </div>
+       </section>
+      <!-- bannar part end here -->
+
+
+      
+    
+  </body>
+</html>
